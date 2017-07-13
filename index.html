@@ -12,11 +12,12 @@
     and Electron <script>document.write(process.versions.electron)</script>.
 
     <button onclick="error()">error</button>
+    <button onclick="errorShowMessageBox()">Using dialog.showMessageBox and parent window</button>
   </body>
 
   <script>
     // You can also require other files to run in this process
     var {error} = require('./renderer.js')
-    console.log(error);
+    var {errorShowMessageBox} = require('./renderer.js')
   </script>
 </html>
